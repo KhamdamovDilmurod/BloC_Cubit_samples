@@ -1,7 +1,7 @@
 part of 'internet_cubit.dart';
 
 abstract class InternetState extends Equatable {
-  const InternetState();
+  InternetState();
 }
 
 class InternetLoading extends InternetState {
@@ -11,7 +11,10 @@ class InternetLoading extends InternetState {
 
 class InternetConnected extends InternetState {
   final ConnectionType connectionType;
-  InternetConnected({required this.connectionType});
+  bool wasIncremented;
+
+  InternetConnected({required this.connectionType, required this.wasIncremented});
+
   @override
   List<Object> get props => [connectionType];
 }

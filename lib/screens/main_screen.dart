@@ -1,3 +1,4 @@
+import 'package:bloc_cubit_samples/screens/connectivity_screen/connectivity_screen.dart';
 import 'package:bloc_cubit_samples/screens/first_screen/first_screen.dart';
 import 'package:bloc_cubit_samples/utils/custom_navigations.dart';
 import 'package:flutter/material.dart';
@@ -34,10 +35,10 @@ class MainScreenState extends State<MainScreen> {
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(LeftToRightRoute(
-                      page: FirstScreen(),
+                      page: ConnectivityScreen(),
                     ));
                   },
-                  child: Text("cubit")),
+                  child: Text("Connectivitty")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(RightToLeftRoute(
