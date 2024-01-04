@@ -27,16 +27,22 @@ class MainScreenState extends State<MainScreen> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(FadeRoute(
-                      page: FirstScreen(),
-                    ));
+                    Navigator.of(context).pushNamed(
+                      '/first',
+                    );
+                    // Navigator.of(context).push(FadeRoute(
+                    //   page: FirstScreen(),
+                    // ));
                   },
                   child: Text("counter cubit")),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(LeftToRightRoute(
-                      page: ConnectivityScreen(),
-                    ));
+                    // Navigator.of(context).push(LeftToRightRoute(
+                    //   page: ConnectivityScreen(),
+                    // ));
+                    Navigator.of(context).pushNamed(
+                      '/connectivity',
+                    );
                   },
                   child: Text("Connectivitty")),
               ElevatedButton(
