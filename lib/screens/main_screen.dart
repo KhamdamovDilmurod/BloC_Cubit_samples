@@ -1,5 +1,8 @@
 import 'package:bloc_cubit_samples/screens/connectivity_screen/connectivity_screen.dart';
 import 'package:bloc_cubit_samples/screens/first_screen/first_screen.dart';
+import 'package:bloc_cubit_samples/screens/widgetsamples/buttons/buttons_screen.dart';
+import 'package:bloc_cubit_samples/screens/widgetsamples/containers/containers_screen.dart';
+import 'package:bloc_cubit_samples/screens/widgetsamples/textfields/textfields_screen.dart';
 import 'package:bloc_cubit_samples/utils/custom_navigations.dart';
 import 'package:flutter/material.dart';
 
@@ -27,67 +30,45 @@ class MainScreenState extends State<MainScreen> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(
-                      '/first',
-                    );
-                    // Navigator.of(context).push(FadeRoute(
-                    //   page: FirstScreen(),
-                    // ));
+                    // Navigator.of(context).pushNamed(
+                    //   '/first',
+                    // );
+                    Navigator.of(context).push(FadeRoute(
+                      page: FirstScreen(),
+                    ));
                   },
                   child: Text("counter cubit")),
               ElevatedButton(
                   onPressed: () {
-                    // Navigator.of(context).push(LeftToRightRoute(
-                    //   page: ConnectivityScreen(),
-                    // ));
-                    Navigator.of(context).pushNamed(
-                      '/connectivity',
-                    );
+                    Navigator.of(context).push(LeftToRightRoute(
+                      page: ConnectivityScreen(),
+                    ));
+                    // Navigator.of(context).pushNamed(
+                    //   '/connectivity',
+                    // );
                   },
                   child: Text("Connectivitty")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(RightToLeftRoute(
-                      page: FirstScreen(),
+                      page: ContainersScreen(),
                     ));
                   },
-                  child: Text("cubit")),
+                  child: Text("containers")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(SlideDownRoute(
-                      page: FirstScreen(),
+                      page: ButtonsScreen(),
                     ));
                   },
-                  child: Text("cubit")),
+                  child: Text("buttons")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(SlideUpRoute(
-                      page: FirstScreen(),
+                      page: TextfieldsScreen(),
                     ));
                   },
-                  child: Text("cubit")),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(SlideTopRightRoute(
-                      page: FirstScreen(),
-                    ));
-                  },
-                  child: Text("6-cubit")),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(SlideBottomRightRoute(
-                      page: FirstScreen(),
-                    ));
-                  },
-                  child: Text("7-cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
-              ElevatedButton(onPressed: () {}, child: Text("cubit")),
+                  child: Text("textfields")),
             ],
           ),
         ),

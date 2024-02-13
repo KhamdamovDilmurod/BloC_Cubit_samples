@@ -1,6 +1,7 @@
 import 'package:bloc_cubit_samples/screens/connectivity_screen/connectivity_screen.dart';
 import 'package:bloc_cubit_samples/screens/first_screen/first_screen.dart';
 import 'package:bloc_cubit_samples/screens/main_screen.dart';
+import 'package:bloc_cubit_samples/screens/widgetsamples/containers/containers_screen.dart';
 import 'package:bloc_cubit_samples/utils/custom_navigations.dart';
 import 'package:flutter/material.dart';
 
